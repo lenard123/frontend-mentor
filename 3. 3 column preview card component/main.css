@@ -1,0 +1,89 @@
+
+body {
+  margin: 0;
+  font-family: Lexend Deca;
+  font-size: 15px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper {
+  border-radius: 15px;
+  color: hsl(0, 0%, 95%);
+  display: grid;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+.wrapper > div {
+  padding: 40px;
+  color: hsl(0, 0%, 100%);
+}
+
+.wrapper > div:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.wrapper > div:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.wrapper > div:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.wrapper svg {
+  display: block;
+}
+
+.wrapper h1 {
+  font-family: Big Shoulders Display;
+  font-weight: 700px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.wrapper p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.wrapper button {
+  border: 2px solid transparent;
+  border-radius: 25px;
+  margin-top: 3rem;
+  padding: 10px 20px;
+}
+
+.wrapper > div:nth-child(1) button {
+  color: hsl(31, 77%, 52%);
+}
+
+.wrapper > div:nth-child(2) button {
+  color: hsl(184, 100%, 22%);
+}
+
+.wrapper > div:nth-child(3) button {
+  color: hsl(179, 100%, 13%);
+}
+
+.wrapper > div:nth-child(1) button:hover,
+.wrapper > div:nth-child(2) button:hover,
+.wrapper > div:nth-child(3) button:hover {
+  border-color: hsla(0, 0%, 100%, 0.75);
+  background-color: inherit;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+@media only screen and (min-width: 901px) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
